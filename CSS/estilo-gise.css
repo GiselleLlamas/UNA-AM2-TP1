@@ -1,0 +1,23 @@
+html, body{
+	width: 100%;
+}
+
+.vereda{
+background-color:rgb(227,247,238);
+display: flex;
+align-items: center;
+}
+
+.img-centrada{
+  width: 1800px;
+  margin: auto;
+  position: relative;
+}
+
+.img-centrada img{
+	width:100%;
+}
+
+.gris1{
+	background-color:#D3D3D3;
+}
