@@ -27,13 +27,14 @@ function draw(){
     if(circ_radio[i] >= width)
       win = true;
   }
+
   push();
   fill(0);
-  text(seg, 10, 50);
   if(win){
     textSize(50);
     textAlign(CENTER,CENTER);
-    text("GANASTE",width/2,height/2);
+    text("NO SE PUEDE TAPAR",width/2,(height/2 - 25));
+    text("EL SOL CON LAS MANOS",width/2,(height/2 + 25));
   }
   pop();
 }
