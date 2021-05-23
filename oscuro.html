@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mensajes</title>
+	<link rel="stylesheet" href="CSS/estilo-gise.css">
+	<script type="text/javascript">
+		var opacidad = 1;
+		function aclarar(){
+			if(opacidad > 0){
+				opacidad = opacidad - 0.1;
+				document.getElementById('oscuridad').style.opacity = opacidad;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<div id="contenidoOscuro">
+
+		<div id="oscuridad" onclick="aclarar()">
+		</div>
+
+		<div id="imagenDetras">
+			<img src="img/trans-pareja.jpg" alt="Pareja trans detrás de un atardecer">
+		</div>
+		
+		<div id="link3">
+			<a href="mensajes.html">
+				<img src="img/link1.png" alt="Persona dibujada en pixel art a una baja resolucion.">
+			</a>
+		</div>
+
+		<div id="link4">
+			<a href="posters.html">
+				<img src="img/link1.png" alt="Persona dibujada en pixel art a una baja resolucion.">
+			</a>
+		</div>
+
+	</div>
+
+</body>
+</html>
