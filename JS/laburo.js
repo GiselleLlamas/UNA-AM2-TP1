@@ -4,11 +4,18 @@ var txt_sectores = [];
 var barra;
 var f_lupa;
 var txt_busqueda;
+var link1, link2;
+var A_link1, A_link2;
 
 function setup() {
     createCanvas(1300,600);
+    link1 = loadImage('img/link3.png');
+    link2 = loadImage('img/link7.png');
+    imageMode(CENTER);
+    A_link1 = createA('oscuro.html', 'oscuro');
+    A_link2 = createA('mensajes.html', 'pared');
     y = [ 100, 250, 400];
-    y_sectores = [ 140, 180, 220, 260, 300 ];
+    y_sectores = [ 130, 170, 210, 250, 290 ];
     txt_sectores = [ "Informática" , "Administración" , "Publicidad" , "Recursos Humanos" , "Docencia"];
     largo = 800;
     alto = 140;
@@ -22,12 +29,11 @@ function setup() {
 
 function draw() {
     background(255);
-    text(mouseX, 10, 10);
-    text(mouseY, 10, 30);
     logo();
     anuncios();
     busqueda();
     sectores();
+    links();
 }
 
 function anuncios() {
@@ -108,5 +114,16 @@ function sectores(){
         text(txt_sectores[i], 40, y_sectores[i]);
         textStyle(NORMAL);
     }
+    pop();
+}
+
+function links() {
+    push();
+    fill(230);
+    rect(20, 310, 150, 230);
+    image(link1, 94, 375);
+    image(link2, 94, 480);
+    A_link1.position(44, 325);
+    A_link2.position(44, 430);
     pop();
 }
