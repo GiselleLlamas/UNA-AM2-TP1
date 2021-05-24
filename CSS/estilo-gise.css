@@ -149,6 +149,7 @@ ESTILO OSCURIDAD
 	top: 40%;
 	left: 10%;
 	z-index: 200;
+	display: none;
 }
 
 #link4{
@@ -156,6 +157,7 @@ ESTILO OSCURIDAD
 	bottom: 5%;
 	right: 30%;
 	z-index: 200;
+	display: none;
 }
 
 /***************************************************************

@@ -11,13 +11,41 @@
 				document.getElementById('oscuridad').style.opacity = opacidad;
 			}
 		}
+
+		function cambiarEstilo1() {
+		  var z = 0;
+		  var x = document.getElementById("link3");
+		  var y = document.getElementById('oscuridad').style.opacity = opacidad;
+		  if (x.style.display == "none" && document.getElementById('oscuridad').style.opacity <= 0 && z === 0) {
+		  	z = "true";
+		  	console.log("z is " + z);
+		    x.style.display = "block";
+		  } else{
+		  	console.log("z is " + z);
+		    x.style.display = "none";
+		  }
+		}
+
+		function cambiarEstilo2() {
+			var z = 0;
+		  	var x = document.getElementById("link4");
+		  	var y = document.getElementById('oscuridad').style.opacity = opacidad;
+				  if (x.style.display == "none" && document.getElementById('oscuridad').style.opacity <= 0 && z === 0) {
+				  	z = "true";
+				  	console.log("z is " + z);
+				    x.style.display = "block";
+				  } else{
+				  	console.log("z is " + z);
+				    x.style.display = "none";
+				  }
+		}
 	</script>
 </head>
 <body>
 
 	<div id="contenidoOscuro">
 
-		<div id="oscuridad" onclick="aclarar()">
+		<div id="oscuridad" onclick="aclarar(); cambiarEstilo2(); cambiarEstilo1();"/>
 		</div>
 
 		<div id="imagenDetras">
