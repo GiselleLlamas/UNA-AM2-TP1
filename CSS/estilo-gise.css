@@ -4,6 +4,10 @@ html, body{
 	margin: 0;
 }
 
+canvas {
+  display: block;
+}
+
 /***************************************************************
 ***************************************************************
 ESTILO MENSAJES
@@ -199,3 +203,4 @@ ESTILO POSTERS
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
