@@ -9,8 +9,8 @@ var A_link;
 
 function setup() {
   createCanvas(1300, 600);
-  link = loadImage('img/link8.png');
-  A_link = createA('posters.html', 'posters');
+  /*link = loadImage('img/link8.png');*/
+  /*A_link = createA('posters.html', 'posters');*/
   imageMode(CENTER);
   noStroke();
   tiempo = 0;
