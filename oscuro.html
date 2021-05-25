@@ -4,48 +4,35 @@
 	<title>Penumbras</title>
 	<link rel="stylesheet" href="CSS/estilo-gise.css">
 	<script type="text/javascript">
-		var opacidad = 1;
+		var opacidad = 100;
 		function aclarar(){
 			if(opacidad > 0){
-				opacidad = opacidad - 0.1;
-				document.getElementById('oscuridad').style.opacity = opacidad;
+				opacidad = opacidad - 10;
+				document.getElementById('oscuridad').style.opacity = (opacidad / 100);
 			}
+			if(opacidad == 0){
+				document.getElementById("link3").style.display = "block";
+				document.getElementById("link4").style.display = "block";
+			}
+
+			playSonido(opacidad);
+
 		}
 
-		function cambiarEstilo1() {
-		  var z = 0;
-		  var x = document.getElementById("link3");
-		  var y = document.getElementById('oscuridad').style.opacity = opacidad;
-		  if (x.style.display == "none" && document.getElementById('oscuridad').style.opacity <= 0 && z === 0) {
-		  	z = "true";
-		  	console.log("z is " + z);
-		    x.style.display = "block";
-		  } else{
-		  	console.log("z is " + z);
-		    x.style.display = "none";
-		  }
+		function playSonido(numero) {
+			var archivo = 'audio' + numero;
+			document.getElementById("contenedorSonido").innerHTML= '<embed src= "mp3/' + archivo + '.mp3" hidden="true" autostart="true" loop="false" />';
 		}
 
-		function cambiarEstilo2() {
-			var z = 0;
-		  	var x = document.getElementById("link4");
-		  	var y = document.getElementById('oscuridad').style.opacity = opacidad;
-				  if (x.style.display == "none" && document.getElementById('oscuridad').style.opacity <= 0 && z === 0) {
-				  	z = "true";
-				  	console.log("z is " + z);
-				    x.style.display = "block";
-				  } else{
-				  	console.log("z is " + z);
-				    x.style.display = "none";
-				  }
-		}
 	</script>
 </head>
 <body>
 
 	<div id="contenidoOscuro">
 
-		<div id="oscuridad" onclick="aclarar(); cambiarEstilo2(); cambiarEstilo1();"/>
+		<span id="contenedorSonido"></span>
+
+		<div id="oscuridad" onclick="aclarar();"/>
 		</div>
 
 		<div id="imagenDetras">

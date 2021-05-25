@@ -3,6 +3,15 @@
 <head>
 	<title>Mensajes</title>
 	<link rel="stylesheet" href="CSS/estilo-gise.css">
+	<script type="text/javascript">
+
+		function mostrarTexto(numero){
+			texto = 'texto' + numero;
+			document.getElementById(texto).style.backgroundColor = 'rgb(255, 166, 214)';
+			document.getElementById(texto).style.color = 'black';
+		}
+
+	</script>
 </head>
 <body class="vereda">
 
@@ -24,13 +33,13 @@
 			</a>
 		</div>
 
-		<div id="texto1" class="textohid"><span>Coraje es ser vos mismx en un mundo que está constantemente tratando de cambiarte.</span></div>
+		<div id="texto1" class="textohid" onmouseover='mostrarTexto(1)'><span>Coraje es ser vos mismx en un mundo que está constantemente tratando de cambiarte.</span></div>
 
-		<div id="texto2" class="textohid"><span>Cuando reducis la vida a blanco y negro, nunca vas a ver arcoíris.</span></div>
+		<div id="texto2" class="textohid" onmouseover="mostrarTexto(2)"><span>Cuando reducis la vida a blanco y negro, nunca vas a ver arcoíris.</span></div>
 
-		<div id="texto3" class="textohid"><span>No me voy a ningún lado, estoy acá y soy visible.</span></div>
+		<div id="texto3" class="textohid" onmouseover="mostrarTexto(3)"><span>No me voy a ningún lado, estoy acá y soy visible.</span></div>
 
-		<div id="texto4" class="textohid"><span>Respetá la existencia o esperá resistencia!</span></div>
+		<div id="texto4" class="textohid" onmouseover="mostrarTexto(4)"><span>Respetá la existencia o esperá resistencia!</span></div>
 
 		<iframe id="webshader" src="webshader.html" title="Web Shader"></iframe>
 	</div>
