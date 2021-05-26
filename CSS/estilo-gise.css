@@ -4,6 +4,10 @@ html, body{
 	margin: 0;
 }
 
+canvas {
+  display: block;
+}
+
 /***************************************************************
 ***************************************************************
 ESTILO MENSAJES
@@ -199,3 +203,47 @@ ESTILO POSTERS
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
+/***************************************************************
+***************************************************************
+ESTILO INDEX
+***************************************************************
+***************************************************************/
+/*
+.flex {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.arriba{
+	order: 1;
+}
+
+.abajo{
+	order: 2;
+	align-self: flex-end;
+}*/
+
+.footer {
+    position: fixed;
+    /*background: url(../images/Main/header.png) no-repeat center center;*/
+    bottom: 0px;
+    left: 0px;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#imginthefooter {       
+    /*background: url(Images/Elk.png) no-repeat;*/
+    width:100px;
+    height:100px;
+    bottom: 0px;  /* Position element */
+    left: 500px; /* Position element */ 
+    position: absolute;
+}​​​​​​​​​
