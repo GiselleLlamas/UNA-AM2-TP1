@@ -12,8 +12,8 @@ function setup() {
     link1 = loadImage('img/link3.png');
     link2 = loadImage('img/link7.png');
     imageMode(CENTER);
-    A_link1 = createA('oscuro.html', 'oscuro');
-    A_link2 = createA('mensajes.html', 'pared');
+    A_link1 = createA('oscuro.html', 'OSCURO');
+    A_link2 = createA('mensajes.html', 'PARED');
     y = [ 100, 250, 400];
     y_sectores = [ 130, 170, 210, 250, 290 ];
     txt_sectores = [ "Informática" , "Administración" , "Publicidad" , "Recursos Humanos" , "Docencia"];

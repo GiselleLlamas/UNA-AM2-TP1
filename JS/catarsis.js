@@ -15,8 +15,9 @@ function setup() {
     link1 = loadImage('img/link6.png');
     link2 = loadImage('img/link1.png');
     imageMode(CENTER);
-    A_link1 = createA('audio.html', 'cuadrados');
-    A_link2 = createA('laburo.html', 'trabajos');
+    A_link1 = createA('audio.html', 'CUADRADOS');
+    A_link1.style("padding-right","15px");
+    A_link2 = createA('laburo.html', 'TRABAJOS');
     circ_aux = 0;
     start = 0;
     presion = 60;
