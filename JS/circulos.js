@@ -5,12 +5,26 @@ var num_random_y = 0;
 var circ_color = [];
 var circ_radio = [];
 var link;
-var A_link;
+var A_link, A_link2, A_link3;
 
 function setup() {
   createCanvas(1300, 600);
   link = loadImage('img/link8.png');
   A_link = createA('posters.html', 'posters');
+  A_link.style('color','rgba(0, 0, 0, 0)');
+  A_link.style('font-size','35px');
+  
+  A_link2 = createA('posters.html', 'posters');
+  A_link2.style('color','rgba(0, 0, 0, 0)');
+  A_link2.style('font-size','35px');
+  
+  A_link3 = createA('posters.html', 'posters');
+  A_link3.style('color','rgba(0, 0, 0, 0)');
+  A_link3.style('font-size','35px');
+  
+  A_link.position(-150, height/2 + 68);
+  A_link2.position(-150, height/2 + 103);
+  A_link3.position(-150, height/2 + 138);
   imageMode(CENTER);
   noStroke();
   tiempo = 0;
@@ -40,7 +54,9 @@ function draw(){
     textAlign(CENTER,CENTER);
     text("NO SE PUEDE TAPAR",width/2,(height/2 - 25));
     text("EL SOL CON LAS MANOS",width/2,(height/2 + 25));
-    A_link.position(width/2 - 50, height/2 + 70);
+    A_link.position(width/2 - 42, height/2 + 68);
+    A_link2.position(width/2 - 42, height/2 + 103);
+    A_link3.position(width/2 - 42, height/2 + 138);
     image(link, width/2, height/2 + 120);
   }
   pop();

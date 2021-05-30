@@ -7,16 +7,46 @@ var cat_sin = [];
 var cat_transparencia = [];
 var cat_transparencia_aux = [];
 var link1, link2;
-var A_link1, A_link2;
-
+var A_link1, A_link2, A_link3;
+var B_link1, B_link2, B_link3;
 
 function setup() {
     createCanvas(1300, 600);
     link1 = loadImage('img/link6.png');
     link2 = loadImage('img/link1.png');
     imageMode(CENTER);
-    A_link1 = createA('audio.html', 'cuadrados');
-    A_link2 = createA('laburo.html', 'trabajos');
+    A_link1 = createA('audio.html', 'cuadrad');
+    A_link1.style('color','rgba(0, 0, 0, 0)');
+    A_link1.style('font-size','35px');
+    
+    A_link2 = createA('audio.html', 'cuadrad');
+    A_link2.style('color','rgba(0, 0, 0, 0)');
+    A_link2.style('font-size','35px');
+    
+    A_link3 = createA('audio.html', 'cuadrad');
+    A_link3.style('color','rgba(0, 0, 0, 0)');
+    A_link3.style('font-size','35px');
+    
+    
+    B_link1 = createA('laburo.html', 'laburos');
+    B_link1.style('color','rgba(0, 0, 0, 0)');
+    B_link1.style('font-size','35px');
+    
+    B_link2 = createA('laburo.html', 'laburos');
+    B_link2.style('color','rgba(0, 0, 0, 0)');
+    B_link2.style('font-size','35px');
+    
+    B_link3 = createA('laburo.html', 'laburos');
+    B_link3.style('color','rgba(0, 0, 0, 0)');
+    B_link3.style('font-size','35px');
+    
+    A_link1.position(-150, height/2 + 68);
+    A_link2.position(-150, height/2 + 103);
+    A_link3.position(-150, height/2 + 138);
+    B_link1.position(-150, height/2 + 68);
+    B_link2.position(-150, height/2 + 103);
+    B_link3.position(-150, height/2 + 138);
+    
     circ_aux = 0;
     start = 0;
     presion = 60;
@@ -62,10 +92,14 @@ function draw() {
     catarsis();
     f_medio_seg();
     if(medio_seg >= 180){
-      image(link1, width/2 - 100, height/2 + 120);
-      image(link2, width/2 + 100, height/2 + 120);
-      A_link1.position(width/2 - 150, height/2 + 70);
-      A_link2.position(width/2 + 50, height/2 + 70);
+        image(link1, width/2 - 100, height/2 + 120);
+        image(link2, width/2 + 100, height/2 + 120);
+        A_link1.position(width/2 - 148, height/2 + 70);
+        A_link2.position(width/2 - 148, height/2 + 105);
+        A_link3.position(width/2 - 148, height/2 + 140);
+        B_link1.position(width/2 + 55, height/2 + 70);
+        B_link2.position(width/2 + 55, height/2 + 105);
+        B_link3.position(width/2 + 55, height/2 + 140);
     }
     
     if(mouseX != 0 && mouseY != 0)
@@ -87,7 +121,7 @@ function circ_color() {
     }
 
     noStroke();
-    ellipse(mouseX, mouseY, 25);
+    rect(mouseX, mouseY, 25, 25);
 }
 
 function catarsis() {
