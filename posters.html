@@ -6,60 +6,84 @@
 	</title>
 	<link rel="stylesheet" href="CSS/estilo-gise.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<script type="text/javascript">
+		function arojo(){
+			document.getElementById('contenido').style.backgroundColor = 'red';
+		}
+
+		function agris(){
+			document.getElementById('contenido').style.backgroundColor = '#D3D3D3';
+		}
+
+		function mostrarVideo(linkVideo){
+			document.getElementById('fondoNegro').style.display = 'block';
+			document.getElementById('contenedorVideo').style.display = 'block';
+			var idVideo = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + linkVideo + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+			document.getElementById('contenidoVideo').innerHTML = idVideo;
+		}
+
+		function cerrarVideo(){
+			document.getElementById('fondoNegro').style.display = 'none';
+			document.getElementById('contenedorVideo').style.display = 'none';
+			document.getElementById('contenidoVideo').innerHTML = '';
+		}
+	</script>
 </head>
 
-<body class="gris1">
+<body>
+
+<div id="contenido" class="gris1">
 
 <div class="fila-posters">
 	<div>
-		<a href="https://youtu.be/1dupYpKHhu4" target="_blank" rel="noopener noreferrer"><img src="img/albert.png" alt="Poster con la cara de una persona."></a>
+		<a href="#" onclick="mostrarVideo('1dupYpKHhu4');" onmouseover="arojo();" onmouseout="agris();"><img src="img/albert.png" alt="Poster con la cara de una persona."></a>
 	</div>
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/bladerunner.png" alt="Poster oficial de la pelicula Blade runner.">
 	</div>
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/electric-sheep.png" alt="Portada del libro Do androids dream of electric Sheep?.">
 	</div>
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/bladerunner.png" alt="Poster oficial de la pelicula Blade runner.">
 	</div>
 
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/crying-game.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 
 	<div>
-		<a href="https://youtu.be/Ue1r1uzibrw" target="_blank" rel="noopener noreferrer"><img src="img/eme.png" alt="Poster con la cara de una persona."></a>
+		<a href="#" onclick="mostrarVideo('Ue1r1uzibrw');" onmouseover="arojo();" onmouseout="agris();"><img src="img/eme.png" alt="Poster con la cara de una persona."></a>
 	</div>
 </div>
 
 <div class="fila-posters">
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/crying-game.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<a href="#" onclick="mostrarVideo('dngN59SWQoE');" onmouseover="arojo();" onmouseout="agris();"><img src="img/charla-2.png" alt="Poster con la cara de una persona."></a>
 	</div>
 
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/bladerunner.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 
-		<div>
-		<a href="https://youtu.be/1dupYpKHhu4" target="_blank" rel="noopener noreferrer"><img src="img/albert.png" alt="Poster con la cara de una persona."></a>
+	<div>
+		<img src="img/electric-sheep.png" alt="Portada del libro Do androids dream of electric Sheep?.">
 	</div>
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<a href="#" onclick="mostrarVideo('1dupYpKHhu4');" onmouseover="arojo();" onmouseout="agris();"><img src="img/albert.png" alt="Poster con la cara de una persona."></a>
 	</div>
-	
+
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/bladerunner.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 
 </div>
@@ -67,27 +91,27 @@
 <div class="fila-posters">
 	
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/bladerunner.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 
 	<div>
-		<a href="https://youtu.be/Ue1r1uzibrw" target="_blank" rel="noopener noreferrer"><img src="img/eme.png" alt="Poster con la cara de una persona."></a>
+		<img src="img/electric-sheep.png" alt="Portada del libro Do androids dream of electric Sheep?.">
 	</div>
 
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<a href="#" onclick="mostrarVideo('Ue1r1uzibrw');" onmouseover="arojo();" onmouseout="agris();"><img src="img/eme.png" alt="Poster con la cara de una persona."></a>
+	</div>
+
+	<div>
+		<a href="#" onclick="mostrarVideo('dngN59SWQoE');" onmouseover="arojo();" onmouseout="agris();"><img src="img/charla-2.png" alt="Poster con la cara de una persona."></a>
 	</div>
 	
 	<div>
 		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
 	</div>
-	
-	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
-	</div>
 
 	<div>
-		<img src="img/bladerunner.png" alt="Poster oficial de blade runner.">
+		<img src="img/crying-game.png" alt="Poster oficial de la pelicula The Crying game.">
 	</div>
 
 </div>
@@ -100,6 +124,18 @@
 	<a href="catarsis.html">
 				<img src="img/link2.png" alt="Persona dibujada en pixel art a una baja resolucion.">
 	</a>
+</div>
+
+</div>
+
+<div id='fondoNegro'></div>
+
+<div id='contenedorVideo'>
+	<div id='botonCerrar'><a href='#' onclick="cerrarVideo();">X</a></div>
+
+	<div id='contenidoVideo'>
+		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ykz_dbpYRPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
 </div>
 
 </body>
