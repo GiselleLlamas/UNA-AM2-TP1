@@ -9,6 +9,7 @@ var A_link, A_link2, A_link3;
 
 function setup() {
   createCanvas(1300, 600);
+
   link = loadImage('img/link8.png');
   A_link = createA('posters.html', 'posters');
   A_link.style('color','rgba(0, 0, 0, 0)');
@@ -25,6 +26,7 @@ function setup() {
   A_link.position(-150, height/2 + 68);
   A_link2.position(-150, height/2 + 103);
   A_link3.position(-150, height/2 + 138);
+
   imageMode(CENTER);
   noStroke();
   tiempo = 0;
