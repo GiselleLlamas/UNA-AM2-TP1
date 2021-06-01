@@ -1,44 +1,92 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> Bestiario</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="CSS/styleBestiario">
-</head>
-<body>
 
-<div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="CSS/styleBestiario.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Document</title>
+  </head>
+  <body>
 
-	<div id="1" >
+    <div id="ojos">
 
-		<img src="img/CabezaAye.jpg">
-		
-		
+    <div id="link2">
+      <a href="www.somosvisibles.com">
+        <img
+          src="img/link2.jpeg"
+          alt="Persona dibujada en pixel art a una baja resolucion."
+        />
+      </a>
 
-	</div>
-
-	<div id="2">
-
-		<img src="img/OjosAye.jpg">
-		
-
-	</div>
-
-	<div id="3">
-
-		<img  src="img/BocaAye.jpg">
-		
-
-	</div>
-
-	<div id="4">
-
-		<img src="img/HombrosAye.jpg">
-		
-
-	</div>
+    </div >
+    
+    <button onclick="myFunctionojos();">
 
 
-</div>
-</body>
+      <img src="img/arribagise.jpeg" id="foto" /><br />
+
+       </div >
+
+
+       <div id="boca">
+
+
+    </button>
+
+
+
+    <button onmousedown="myFunctionboca();">
+
+
+      <img src="img/abajogise.jpeg" id="foto2" /><br />
+
+
+    </button>
+
+
+    </div>
+
+
+    <script>
+      function myFunctionojos() {
+        var elemento = document.getElementById('foto');
+        if (elemento.getAttribute('src') === 'img/arribagise.jpeg') {
+          elemento.src = 'img/arribazuri.jpeg';
+        } else if (elemento.getAttribute('src') === 'img/arribazuri.jpeg') {
+          elemento.src = 'img/arribaprofe.jpeg';
+        } else if (elemento.getAttribute('src') === 'img/arribaprofe.jpeg') {
+          elemento.src = 'img/arribajuli.jpeg';
+        }
+        else if (elemento.getAttribute('src') === 'img/arribajuli.jpeg') {
+          elemento.src = 'img/arribaayrton.jpeg';
+        }
+        else if (elemento.getAttribute('src') === 'img/arribaayrton.jpeg') {
+          elemento.src = 'img/arribagise.jpeg';
+        }
+      }
+
+
+      function myFunctionboca() {
+        var elemento2 = document.getElementById('foto2');
+        if (elemento2.getAttribute('src') === 'img/abajogise.jpeg') {
+          elemento2.src = 'img/abajozuri.jpeg';
+        } else if (elemento2.getAttribute('src') === 'img/abajozuri.jpeg') {
+          elemento2.src = 'img/abajoprofe.jpeg';
+        } else if (elemento2.getAttribute('src') === 'img/abajoprofe.jpeg') {
+          elemento2.src = 'img/abajojuli.jpeg';
+        }
+        else if (elemento2.getAttribute('src') === 'img/abajojuli.jpeg') {
+          elemento2.src = 'img/abajoayrton.jpeg';
+        }
+
+        else if (elemento2.getAttribute('src') === 'img/abajoayrton.jpeg') {
+          elemento2.src = 'img/abajogise.jpeg';
+        }
+      }
+
+
+  
+    </script>
+  </body>
 </html>

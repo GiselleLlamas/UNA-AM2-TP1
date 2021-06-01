@@ -1,10 +1,27 @@
-div {
+body {
 
-	display: inline;
+	background-color: white ;
+}
 
-	width: 100px;
-	height: 100px;
-	margin: 0px;
-	padding: 0px;
 
+#link2 {
+  position: absolute;
+  top: 71%;
+  left: 80%;
+  z-index: 100;
+}
+
+#ojos {
+	
+	margin-right: 10%;
+	margin-left: 30%;
+
+
+}
+
+#boca {
+
+
+	margin-right: 10%;
+	margin-left: 30%;
 }
