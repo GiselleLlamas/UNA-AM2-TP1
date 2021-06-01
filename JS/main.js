@@ -4,10 +4,37 @@ let colors = ['blue', 'yellow', 'white', 'red', 'brown', 'orange','pink'];
 //get button
 let button = document.getElementById('button');
 
+var sonido = new Audio();
+sonido.src="mp3/sonido.mp3";
 
+var mujeres = new Audio();
+mujeres.src="mp3/mujeres.mp3";
 
+var voz = new Audio();
+voz.src = "mp3/voz.mp3";
 
+var anulan = new Audio();
+anulan.src = "mp3/anulan.mp3";
 
+var genero = new Audio();
+genero.src = "mp3/genero.mp3";
+
+var invisibilizan = new Audio();
+invisibilizan.src = "mp3/invisibilizan.mp3";
+
+var iglesias = new Audio();
+iglesias.src = "mp3/iglesias.mp3";
+
+var binario = new Audio();
+binario.src = "mp3/binario.mp3";
+
+function pauseAudiosAllAndPlay(audio){
+    let mp3s = [sonido, mujeres, voz, anulan, genero, invisibilizan, iglesias, binario];
+
+    mp3s.forEach(mp3 => mp3.pause());
+
+    audio.play();
+}
 
 //add event listener
 button1.addEventListener('click', function(){
@@ -84,10 +111,3 @@ button8.addEventListener('click', function(){
 
     container.style.background = randomColor;
 })
-
-
-var sonido = new Audio();
-sonido.src="sonido.mp3";
-
-
-
