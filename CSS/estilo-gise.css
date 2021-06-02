@@ -264,6 +264,13 @@ align-items: center;
 	align-self: flex-end;
 }*/
 
+#link7 {
+  position: absolute;
+  top: 51%;
+  left: 80%;
+  z-index: 100;
+}
+
 .footer {
     position: fixed;
     /*background: url(../images/Main/header.png) no-repeat center center;*/
